@@ -17,11 +17,11 @@ Please implement methods in the [CatLibrary](src/main/java/com/epam/autotasks/Ca
 
 - `public Map<String, Cat> mapCatsByName(List<Cat> cats)` - returns a map with a cat's name as a key.
 - `public Map<Cat.Breed, Set<Cat>> mapCatsByBreed(List<Cat> cats)` - returns a map with a breed as a key and _cats_, categorized by breed, as a value.
-- `public Map<Cat.Breed, String> mapCatNamesByBreed(List<Cat> cats)` - returns a map with a breed as a key and a string of _cats'_ names, categorized by breed, as a value. Cats with _null_ names should be excluded. The string pattern is "Cat names: [name1], [name2], [name3], ..."
+- `public Map<Cat.Breed, String> mapCatNamesByBreed(List<Cat> cats)` - returns a map with a breed as a key and a string of _cats'_ names, categorized by breed, as a value. Cats with _null_ or _empty_ names should be excluded. The string pattern is "Cat names: [name1], [name2], [name3], ..."
 - `public Map<Cat.Breed, Double> mapAverageResultByBreed(List<Cat> cats)` - returns a map with a breed as a key and the value is the average contest result for this breed.
 - `public SortedSet<Cat> getOrderedCatsByContestResults(List<Cat> cats)` - returns a set of given _cat_ objects ordered by contest results (from highest to lowest).
 
-1. All cat fields are cat be null except for the last method. 
+1. All cat fields can be null except for the last method.
 2. All cat names are unique.
 
 ### Examples
