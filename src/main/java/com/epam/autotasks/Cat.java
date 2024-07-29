@@ -15,7 +15,6 @@ public class Cat {
     private ContestResult contestResult;
 
     public enum Breed {
-
         BRITISH, MAINE_COON, MUNCHKIN, PERSIAN, SIBERIAN, SPHYNX
     }
 }
